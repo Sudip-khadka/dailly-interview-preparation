@@ -50,9 +50,32 @@ $ - matches the end of a string
 // const result = string.match(regex);
 // console.log(result); // Output: ["dog", "dog"]
 
-Array.prototype.forEach.call("a string", (chr) => {
-  console.log(chr);
-});
-"a string".split("").forEach((chr) => {
-  console.log(chr);
-});
+// Array.prototype.forEach.call("a string", (chr) => {
+//   console.log(chr);
+// });
+// "a string".split("").forEach((chr) => {
+//   console.log(chr);
+// });
+
+/*Dailly Practice Questions:
+•	Reverse String
+•	Count Vowels
+•	Remove Duplicates
+*/
+
+let string="Phoenix";
+let reversedString=string.split('').reverse().join('');
+console.log(reversedString)
+let vowels=['a','e','i','o','u'];
+let vowelsCount=0;
+for(let i=0;i<string.length;i++){
+  if(vowels.includes(string[i].toLowerCase())){
+    vowelsCount++;
+  }
+}
+console.log(vowelsCount);
+
+//remove duplicates
+let fruits=["apple","banana","mango","cherry","tomato","apple"];
+let duplicateRemovedFruits=new Set(fruits)
+console.log([...duplicateRemovedFruits])
