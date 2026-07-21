@@ -63,19 +63,48 @@ $ - matches the end of a string
 •	Remove Duplicates
 */
 
-let string="Phoenix";
-let reversedString=string.split('').reverse().join('');
-console.log(reversedString)
-let vowels=['a','e','i','o','u'];
-let vowelsCount=0;
-for(let i=0;i<string.length;i++){
-  if(vowels.includes(string[i].toLowerCase())){
-    vowelsCount++;
-  }
-}
-console.log(vowelsCount);
-
+// let string="Phoenix";
+// let reversedString=string.split('').reverse().join('');
+// console.log(reversedString)
+// let vowels=['a','e','i','o','u'];
+// let vowelsCount=0;
+// for(let i=0;i<string.length;i++){
+//   if(vowels.includes(string[i].toLowerCase())){
+//     vowelsCount++;
+//   }
+// }
+// console.log(vowelsCount);
+//anagram
+// const anagramChecker=(str,strToCheck)=>{
+//   if(str.length!==strToCheck.length){
+//     return false
+//   }
+//   else{
+//     return str.split('').sort().join('')===strToCheck.split('').sort().join('')
+//   }
+  
+// }
+// console.log(anagramChecker("live", "evil"));   // true
+// console.log(anagramChecker("live", "veil"));   // true
+// console.log(anagramChecker("live", "lives"));  // false
+// console.log(anagramChecker("abc", "abd"));     // false
 //remove duplicates
-let fruits=["apple","banana","mango","cherry","tomato","apple"];
-let duplicateRemovedFruits=new Set(fruits)
-console.log([...duplicateRemovedFruits])
+// let fruits=["apple","banana","mango","cherry","tomato","apple"];
+// let duplicateRemovedFruits=new Set(fruits)
+// console.log([...duplicateRemovedFruits])
+
+
+//remove duplicates without set
+// const uniqueFruits=(fruits)=>{
+//   let uniqueArr=[];
+//   for(let i=0;i<fruits.length;i++){
+//     if(uniqueArr.includes(fruits[i])){
+//       continue;
+//     }
+//     uniqueArr.push(fruits[i])
+//   }
+//   return uniqueArr;
+// }
+// console.log(uniqueFruits(fruits))
+
+console.log(false??true)
