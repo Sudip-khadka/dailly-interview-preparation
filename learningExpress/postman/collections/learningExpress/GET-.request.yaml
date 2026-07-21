@@ -1,0 +1,5 @@
+$kind: http-request
+name: GET/
+url: http://localhost:3000
+method: GET
+order: 1784626485577
