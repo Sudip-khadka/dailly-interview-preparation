@@ -1,3 +1,49 @@
+//Day4
+
+// 1. Largest Number
+// [5, 3, 10, 2]
+// ↓
+// 10
+
+// const data:number[]=[5,3,10,2];
+// const findLargestNumber=(data:number[]):number=>{
+//     let largestNum=data[0];
+//     for(let i=1;i<data.length;i++){
+//         largestNum=Math.max(data[i],largestNum)
+//     }
+//     return largestNum
+// }
+// console.log(findLargestNumber(data))
+// ________________________________________
+// 2. Character Frequency
+// "mississippi"
+// ↓
+// {
+//   m:1,
+//   i:4,
+//   s:4,
+//   p:2
+// }
+// const findCharFrequency=(str:string): Record<string, number> =>{
+//     let result:Record<string,number>={}
+//     for (const char of str) {
+//         result[char] = (result[char] || 0) + 1;
+//     }
+//     return result;
+// }
+// ________________________________________
+// 3. Implement
+// myFilter()
+// without using .filter().
+// const filterOddNumbers=(data:number[]):number[]=>{
+//     let result:number[]=[];
+//     for(let i=0;i<data.length;i++){
+//         if(data[i]%2===0){
+//             result.push(data[i])
+//         }
+//     }
+//         return result;
+// }
 // interface User{
 //     firstName:string;
 //     lastName:string;
